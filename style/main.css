@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+bady {
+    font-family:'Roboto';
+}
+.nav {
+    background: #322E41;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+    padding: 23px 14px;
+    display: block;
+    color:white;
+    font-weight: 400;
+    line-height: 18px;
+    transition: 0.5s;
+}
+.link:hover {
+    background: white;
+    color: #D47300;
+
+}
+.main__top {
+    background: url(../image/Nike.jpg) top/cover no-repeat ;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.main__sub-title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 58px;
+}
+.main__sub {
+    text-align: center;
+    color: white;
+
+}
+.main__sub-text {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    line-height: 21px;
+}
+.main__sub-text span {
+    font-weight: 700;
+}
+
+
+
+
+.main__bottom {
+    background: #EBEBEB;
+    padding-bottom: 30px;
+}
+.main-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.main__left {
+    padding: 15px;
+    background: white;
+    max-width: 540px;
+    border-radius: 6px;
+}
+.main-left__img {
+    display: block;
+}
+.main-left__title {
+    font-size: 22px;
+    color: #2C2A2A;
+    line-height: 25px;
+    margin-top: 20px;
+}
+.main-left__text {
+    font-weight: 400;
+    color: #9B9B9B;
+    line-height: 18px;
+    margin-top: 10px;
+}
+.main-box {
+    background: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+    border-radius: 6px;
+    max-width: 255px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-box__img {
+    display: block;
+}
+.main-box__title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2C2A2A;
+    line-height: 6px;
+    margin-top: 12px;
+
+}
+.main-box__text {
+    text-align: left;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 12px;
+    color: #9B9B9B;
+}
+.main-right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.main__left,
+.main-right {
+    margin-top: -30px;
+}
+.footer{
+    background: #322E41;
+    padding: 37px 0 57px;
+}
+.footer-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.form-input {
+    width: 350px;
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+
+}
+.form-input::placeholder {
+    color: #9B9B9B;
+}
+.form-comment {
+    width: 350px;
+    height: 86px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    font-family:'Roboto';
+    resize: none;
+    margin-top: 10px;
+
+}
+.form-input::placeholder,
+.form-comment::placeholder {
+    color: #9B9B9B;
+}
+.form-btn {
+    width: 350px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    padding: 6px 0;
+    margin-top: 11px;
+    background-color: #544294;
+    color: #FFFFFF;
+    font-weight: 400;
+    cursor: pointer;
+}
+.footer-right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 68px;
+}
+.footer-list {
+    list-style: none;
+}
+.footer-link {
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 18px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+
+}
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-link:hover {
+    color: #D47300;
+}
+/* .form-btn:active {
+    /* background: white; */
+    /* color: black; */
+/* } */ 
+.form-btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+.form-btn::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 0;
+    transition: 500ms;
+    background: springgreen;
+    z-index: -1;
+
+}
+.form-btn:hover::before {
+    width: 100%;
+    left: 0;
+}
+.form-btn:hover {
+    background: transparent;
+    color: black;
+}
+
